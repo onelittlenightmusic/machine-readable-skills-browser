@@ -1,0 +1,12 @@
+# mywant custom manifest.
+#
+# This package ships no want type of its own: it is the shared browser_run()
+# helper that script-backed plugins import. It rides in the custom-types
+# directory because that is where those plugins live and where they look for it
+# — the want type loader simply finds no YAML here and moves on.
+custom:
+  name: machine-readable-skills-browser
+  description: Shared browser_run() helper for MyWant machine-readable-skill plugins.
+  components:
+    - kind: custom-type
+      path: .

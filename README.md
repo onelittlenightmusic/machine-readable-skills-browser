@@ -52,3 +52,14 @@ Requires the mywant browser extension to be installed and enabled (see
 ## Requirements
 
 Python 3.10+, standard library only — no pip install needed.
+
+## Installing
+
+```sh
+mywant custom install onelittlenightmusic/machine-readable-skills-browser
+```
+
+That clones this repo into `~/.mywant/customs/` and links it into
+`~/.mywant/custom-types/machine-readable-skills-browser`, which is where the
+plugins add it to `sys.path`. A checkout at `~/work/machine-readable-skills-browser`
+still wins when present, so a development copy keeps overriding the installed one.
